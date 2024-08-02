@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Exemplo de Cadastro</title>
+    <link rel="stylesheet" href="/stylecad2.css">
+</head>
+<body>
+
+
+    <h1>Formulario de Contato</h1>
+    <form action="submit" method= "post" 
+        <label for="name">Nome:</label>
+        <input type="text" id= "name" required maxlenght="50" minlength= "2" placeholder="Digite seu nome:">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Digite seu email: ">
+        
+        <label for="name">Telefone:</label>
+            <input type="Tel" id="Telefone" name="Telefone" pattern="/(d{2} /d(4,5)-{4})"
+          required placeholder="(66) 99988 8888" required>
+
+            <label for="age">Idade:</label>
+            <input type="number" name="age" id="age" min="18" max="100" required
+            placeholder="Digite sua idade">
+
+            <h4> Linguagem Preferida </h4>
+            <label for="html">HTML</label>
+            <input type="radio" name="fav_language" value="html" id="html">
+
+            <label for="massage">css</label>
+            <input type="radio" name="fav_language" id="css" value="css">
+
+            <label for="javaScript">javaScript</label>
+            <input type="radio" name="fav_language" id="javaScript" value="javaScript">
+
+            <label for="massage">Mensagem </label>
+            <textarea name="message" id="message" rows="5" maxlength="10" placeholder="Digite sua Mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+
+</form>
+</body>
+</html>
